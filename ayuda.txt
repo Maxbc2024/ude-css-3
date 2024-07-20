@@ -7,3 +7,11 @@ ayuda flex box
 https://codepen.io/enxaneta/full/adLPwv/
 
 https://the-echoplex.net/flexyboxes/
+
+
+--------------------
+
+float
+clear:both
+https://es.learnlayout.com/float
+
