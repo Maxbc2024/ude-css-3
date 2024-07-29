@@ -9,9 +9,29 @@ https://codepen.io/enxaneta/full/adLPwv/
 https://the-echoplex.net/flexyboxes/
 
 
+
 --------------------
 
 float
 clear:both
 https://es.learnlayout.com/float
+
+
+--------------------------------------------------------------------------
+
+
+
+sec 7 -- copia
+sec 9 -- copia
+sec 10 -- copia
+sec 11 -- copia
+sec 12 -- copia
+sec 14 -- copia
+sec 15 -- copia
+sec 16 -- copia
+sec 17 -- copia
+sec 18 -- copia
+sec 20 -- copia
+
+
 
