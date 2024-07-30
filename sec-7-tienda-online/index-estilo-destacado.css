@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+
+
+/** VARIABLES */
+:root{
+     --color-primario: #0D6EFD;
+     --color-secundario: #0B5ED7;
+     --color-oscuro: #122936; 
+}
+
+
+/** GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.btn{
+    background: var(--color-primario);
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: var(--color-secundario);
+}
+
+
+
+
+
+
+
+/** --------------------------------- DESTACADOS / FAVORITO  ------------------- */
+h1.title{
+    text-align: center;
+    font-weight: 100;
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.favorito{
+    /* background-color: tomato; */
+
+    padding: 20px 150px;
+    height: 100vh;
+    position: relative;
+}
+
+.favorito::before{
+    /* letra     */
+    content: 'Technology';
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    font-weight: 600;
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.favorito::after{
+    content: 'Best';
+    position: absolute;
+    top: 2%;
+    right: 0;
+    font-weight: 600;
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
+
+.container-favorito > div{
+    float: left;
+    margin: 30px;
+}
+
+.imagen-fav{
+    /* background-color: #0B5ED7; */
+
+    /* ocupa el 40%  */
+    width: 40%;
+    /* para que no se salda el circulo azul */
+    position: relative; 
+}
+
+.imagen-fav img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s; 
+}
+
+
+.imagen-fav::before{
+    /* EL CIRCULO AZUL */
+    content: 'Best Choice';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-secundario);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 10px 5px var(--color-secundario);
+    z-index: 1;
+    transition: all .5s;
+}
+
+.imagen-fav:hover::before{
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.container-favorito:hover .imagen-fav img{
+    /* La imagen de circulo azul crece */
+    transform: scale(1.1);
+}
+
+
+/* content-------------------------- */
+
+.content-fav{
+    /* background-color: aqua; */
+
+    width: 40%;
+    height: 100%;
+}
+
+.content-fav h1{
+    /* titulo mas grande  */
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.content-fav h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-secundario);
+}
+
+.content-fav .text p{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+.content-inferior{
+    /* background-color: bisque; */
+
+    width: 100%;
+    height: 50px;
+}
+
+.content-inferior .price{
+    float: left;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--color-oscuro);
+}
+
+.content-inferior .buy{
+    float: right;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+}

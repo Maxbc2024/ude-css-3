@@ -1,0 +1,565 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+
+
+/** VARIABLES */
+:root{
+     --color-primario: #0D6EFD;
+     --color-secundario: #0B5ED7;
+     --color-oscuro: #122936; 
+}
+
+
+/** GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.btn{
+    background: var(--color-primario);
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: var(--color-secundario);
+}
+
+
+
+/* <!-- ----------------- MENU PRINCIPAL -------------------------- --> */
+
+
+.menu-principal{
+    /* background-color: tomato; */
+    /* background: #FFF; */
+    width: 100%;
+    height: 50px;
+    
+}
+
+.menu-principal div{
+    float: left;
+}
+
+.nav-imagen{
+    /* background-color: bisque; */
+    /* ocupa todo  el tamaño de su padre */
+    height: 100%;
+}
+
+.nav-imagen img{
+    /* background-color: goldenrod; */
+    /* 50% de ancho del que lo contiene */
+    width: 50%;
+
+    position: relative;
+    /* lo centra */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-enlaces{
+    /* background-color: green; */
+}
+
+
+
+.nav-enlaces a{
+    line-height: 50px;
+    margin: 0 20px;
+    color: #000;
+    padding: 4px 10px;
+    border: 2px solid transparent;
+    transition: all .5s;
+}
+
+.nav-enlaces a.active{
+    /* color azul */
+    color: var(--color-primario);
+}
+
+.nav-enlaces a:hover{
+    border: 2px solid var(--color-primario);
+}
+
+
+/* <!---------------------- HEADER ---------------------------> */
+
+
+header{
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: relative;
+
+    background: url(img/wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+header div{
+    width: 100%;
+
+    position: absolute;
+    /* centrar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* centrar contenido */
+    text-align: center;
+}
+
+
+header h1{
+    color: #FFF;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 20px 0;
+    text-shadow: 5px 0 10px #000;
+}
+
+header button{
+    width: 180px;
+    height: 50px;
+}
+
+
+/**--------------------  PRODUCTOS ------------------------ */
+
+.productos{
+    padding: 30px 100px;
+}
+
+
+/** CARD ------------------------ */
+
+.card{
+    /* background-color: #c0d2ec; */
+    /* border: 1px solid blue; */
+
+    background: var(--color-oscuro);
+
+    width: 33%;
+    height: 420px;
+    overflow: hidden;
+
+    position: relative;
+
+    float: left;
+
+    border: none;
+    margin: 1px;
+}
+
+.card::before{
+    /* es la parte azul detras de la imagen */
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: var(--color-primario);
+    transform: skewY(345deg);
+    transition: all .5s;
+}
+
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card .img-card{
+    background-color: red;
+
+    width: 100%;
+    /* Centrado */
+    position: absolute; 
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .img-card img{
+    /* centra */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* tmaño de la imagen 70% */
+    max-width: 70%;
+    
+    transition: all .5s; 
+}
+
+.card:hover .img-card img{
+    max-width: 60%; 
+}
+
+.content-card{
+    /* background-color: aqua; */
+
+    width: 100%;
+    
+    text-align: center;
+
+    /* POSICION ABAJO */
+    position: absolute;
+    bottom: 12%;
+    /* z-index: 1;  */
+}
+
+.content-card h3{
+    font-size: 2vw;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content-card .price{
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content-card .buy{  
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top:15px;
+    /* Lo pone abajo la letra compra */
+    position: relative;
+    top: 200px;
+}
+
+.card:hover .content-card .buy{
+    top: 20px;
+    opacity: 1;
+}
+
+
+/** ------------------------------ MENSAJE -------------------- */
+
+.mensaje{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url(img/section.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.mensaje::before{
+    /* para que se oscurezca un poco */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mensaje p{
+    width: 100%;
+    text-align: center;
+   
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 100;
+    text-shadow: 5px 0 10px #000; 
+    
+    /* centrado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/** --------------------------------- DESTACADOS / FAVORITO  ------------------- */
+h1.title{
+    text-align: center;
+    font-weight: 100;
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.favorito{
+    /* background-color: tomato; */
+
+    padding: 20px 150px;
+    height: 100vh;
+    position: relative;
+}
+
+.favorito::before{
+    /* letra     */
+    content: 'Technology';
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    font-weight: 600;
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.favorito::after{
+    content: 'Best';
+    position: absolute;
+    top: 2%;
+    right: 0;
+    font-weight: 600;
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
+
+.container-favorito > div{
+    float: left;
+    margin: 30px;
+}
+
+.imagen-fav{
+    /* background-color: #0B5ED7; */
+
+    /* ocupa el 40%  */
+    width: 40%;
+    /* para que no se salda el circulo azul */
+    position: relative; 
+}
+
+.imagen-fav img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s; 
+}
+
+
+.imagen-fav::before{
+    /* EL CIRCULO AZUL */
+    content: 'Best Choice';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-secundario);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 10px 5px var(--color-secundario);
+    z-index: 1;
+    transition: all .5s;
+}
+
+.imagen-fav:hover::before{
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.container-favorito:hover .imagen-fav img{
+    /* La imagen de circulo azul crece */
+    transform: scale(1.1);
+}
+
+
+/* content-------------------------- */
+
+.content-fav{
+    /* background-color: aqua; */
+
+    width: 40%;
+    height: 100%;
+}
+
+.content-fav h1{
+    /* titulo mas grande  */
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.content-fav h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-secundario);
+}
+
+.content-fav .text p{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+.content-inferior{
+    /* background-color: bisque; */
+
+    width: 100%;
+    height: 50px;
+}
+
+.content-inferior .price{
+    float: left;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--color-oscuro);
+}
+
+.content-inferior .buy{
+    float: right;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/**  -------------------------- CONTACTO ------------------------------ */
+
+.suscribe{
+    /* background-color:  tomato; */
+    background: var(--color-oscuro);
+
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.suscribe::before{
+    /* la letra de fondo */
+    content: 'Suscribete';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15vw;
+    color: rgba(0, 0, 0, 0.08);
+}
+
+.search{ 
+    background: #e5e5e5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 10px;
+    transition: all .5s;
+
+    /* CENTRADO */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search:hover{
+    /* crece el cirulo plomo */
+    width: 300px;
+}
+
+.search:hover .search-text{
+    /* crece el imput */
+    width: 90%;
+}
+
+.search:hover .search-icon{
+    background: var(--color-primario);
+    color: #FFF;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 10px;
+    width: 0;
+    height: 100%;
+    color: #000;
+    font-size: 16px;
+    transition: all .5s;
+}
+
+.search-icon{
+    /* icono grande */
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:var(--color-primario);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px !important;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.search-icon:hover{
+    transform: scale(1.2);
+}
+
+/**  -------------------------- FOOTER ------------------------------ */
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #0F212C;
+}
+
+footer div{
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 100px;
+    transition: all .5s;
+}
+
+footer div:hover{
+    /* SE NEGREA EL CUADRADO */
+    background: #0D1C25;
+}
+
+footer div:hover a{
+    /* crece el icono */
+    font-size: 35px;
+}
+
+footer div a{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #CCC;
+    transition: all .5s;
+}
