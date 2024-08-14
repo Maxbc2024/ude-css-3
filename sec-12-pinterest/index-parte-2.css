@@ -37,7 +37,7 @@ a{
 
 
 
-/** MENU PRINCIPAL */
+/** ----------------------- MENU PRINCIPAL ----------------------- */
 nav{
      position: fixed;
      width: 100%;
@@ -156,7 +156,7 @@ nav .iconos img{
 }
 
 
-/** GALERIA */
+/** ----------------------- GALERIA  -----------------------*/
 .row{
      width: 1260px;
      margin: 0 auto;
@@ -338,7 +338,7 @@ nav .iconos img{
 
 
 
-/** BOTONES INFERIORES  */
+/** ----------------------- BOTONES INFERIORES  ----------------------- */
 .btn-inferiores{
      position: fixed;
      right: 25px;

@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+
+/** GENERALES */
+:root{
+     --color-principal: #6610F2;
+     --color-secundario: #0C91E5;
+     --color-alternativo: #FF6537;
+     --gris-default: #6C757D;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto';
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+a{
+     text-decoration: none;
+}
+
+
+.btn{
+     width: 200px;
+     height: 40px;
+     border: none;
+     border-radius: 5px;
+     background: var(--color-secundario);
+     color: #FFF;
+     font-size: 14px;
+     font-weight: 600;
+     text-transform: uppercase;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     transition: all .5s;
+}
+
+.btn:hover{
+     background: #0874B8;
+}
+
+.btn-top{
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 50px;
+     height: 50px;
+     background: var(--color-alternativo);
+     opacity: 0.7;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     color: #FFF;
+     z-index: 1;
+     transition: all .5s;
+}
+
+.btn-top:hover{
+     opacity: 1;
+}
+
+
+.badge{
+     background: var(--color-principal);
+     color: #FFF;
+     font-size: 11px;
+     font-weight: 600;
+     text-transform: uppercase;
+     border-radius: 20px;
+     padding: 5px 15px;
+     cursor: default;
+     transition: all .5s;
+}
+
+
+
+
+
+
+
+/** --------------------------- DESTACADOS --------------------------- */
+.destacados{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     position: relative;
+}
+
+.destacados::before{
+     content: 'Destacados';
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: 600;
+     font-size: 12em;
+     color: rgba(0, 0, 0, 0.07);
+}
+
+.game{
+     position: relative;
+     width: 45%;
+     height: 350px;
+     margin: 40px 20px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     transition: all .5s;
+}
+
+.game:nth-child(1){
+     background: linear-gradient(45deg, #10214C, #DA3DBE);
+}
+
+.game:nth-child(2){
+     background: linear-gradient(45deg, #1A2F3F, #7094CE);
+}
+
+.game:nth-child(3){
+     background: linear-gradient(45deg, #000, #1C78B2);
+}
+
+.game:nth-child(4){
+     background: linear-gradient(45deg, #0E2B2F, #00FFFF);
+}
+
+
+.game img{
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     transform: translate(-50%);
+     height: 380px;
+     z-index: 1;
+     transition: all .5s;
+}
+
+.game:hover img{
+     left: 75%;
+     height: 400px;
+}
+
+
+
+.game .content{
+     position: relative;
+     width: 50%;
+     left: 20%;
+     padding: 20px 20px 20px 40px;
+     color: #FFF;
+     opacity: 0;
+     transition: all .5s;
+}
+
+.game:hover .content{
+     left: 0;
+     opacity: 1;
+}
+
+.game .content h2{
+     text-transform: uppercase;
+     font-size: 2.2em;
+     line-height: 1em;
+}
+
+.game .content a{
+     position: relative;
+     color: #000;
+     background: #FFF;
+     display: inline-block;
+     padding: 10px 20px;
+     margin-top: 10px;
+     font-weight: 700;
+}
+
+
+
