@@ -196,16 +196,12 @@ section.full::before{
 }
 
 
-
-
-
-
-
 /** ---------------------- HELADOS ---------------------- */
 .helado{
      height: 115vh;
      background: url(img/image7.webp), #B5E8D5;
      background-attachment: fixed;
+
      display: flex;
 }
 

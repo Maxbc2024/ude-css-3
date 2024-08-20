@@ -16,9 +16,6 @@ body::-webkit-scrollbar-thumb{
      background: var(--text-color);
 }
 
-
-
-
 /** GENERALES  */
 *{
      margin: 0;
@@ -72,10 +69,6 @@ section{
      height: 100vh;
 }
 
-.text-container{
-    flex-direction: column; 
-}
-
 .enlace-info{
      font-size: 21px;
      margin-top: 30px;
@@ -86,6 +79,77 @@ section{
      text-decoration: underline;
 }
 
+
+/** ------------------------- MENU DE NAVEGACION ------------------------- */
+nav{
+     background: rgba(0, 0, 0, 0.8);
+
+     position: fixed;
+
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 44px;
+
+     z-index: 3;
+}
+
+nav .enlaces{
+     position: relative;
+
+     height: 100%;
+     padding: 0 22px;
+     margin: 0 auto;
+     max-width: 980px;
+
+     display: flex;
+     /* LADO X */
+     justify-content: space-between;
+     /* LADO Y */
+     align-items: center;
+}
+
+nav .enlaces img{
+     width: 16px;
+}
+
+nav .enlaces a{
+     color: #F5F5F7;
+     font-size: 14px;
+     padding: 0 10px;
+     
+     cursor: pointer;
+     opacity: .8;
+     transition: all .3s;
+}
+
+nav .enlaces a:hover{
+     opacity: 1;
+}
+
+
+
+/** ------------------------- HEADER  ------------------------- */
+
+header{
+     width: 100%;
+     height: calc(100vh - 44px);
+     margin: 44px 0 0 0;
+     background: #F2F2F2;
+}
+
+header img{
+     width: 85%;
+}
+
+header .text-container{
+     padding: 30px 0 0 0;
+     justify-content: flex-end !important;
+}
+
+header .img-container{
+     align-items: flex-end !important;
+}
 
 
 /** ESTILOS GRID  */
@@ -122,68 +186,6 @@ section{
      grid-column: span 12;
 }
 
-
-
-/** ------------------------- MENU DE NAVEGACION ------------------------- */
-nav{
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 44px;
-     z-index: 3;
-     background: rgba(0, 0, 0, 0.8);
-}
-
-nav .enlaces{
-     position: relative;
-     height: 100%;
-     padding: 0 22px;
-     margin: 0 auto;
-     max-width: 980px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
-nav .enlaces img{
-     width: 16px;
-}
-
-nav .enlaces a{
-     color: #F5F5F7;
-     font-size: 14px;
-     padding: 0 10px;
-     opacity: .8;
-     cursor: pointer;
-     transition: all .3s;
-}
-
-nav .enlaces a:hover{
-     opacity: 1;
-}
-
-
-
-/** ------------------------- HEADER  ------------------------- */
-header{
-     width: 100%;
-     height: calc(100vh - 44px);
-     margin: 44px 0 0 0;
-     background: #F2F2F2;
-}
-
-header img{
-     width: 85%;
-}
-
-header .text-container{
-     padding: 30px 0 0 0;
-     justify-content: flex-end !important;
-}
-
-header .img-container{
-     align-items: flex-end !important;
-}
-
-
+.text-container{
+     flex-direction: column; 
+ }

@@ -18,10 +18,7 @@ header, section {
   padding: 100px 0;
 }
 
-.box-center {
-  width: 80%;
-  margin: auto;
-}
+
 
 h1.tprincipal {
   font-family: "Merienda";
@@ -247,45 +244,25 @@ h5 {
   transform: scale(1.1);
 }
 
-/* -------------------<!-- Menu principal -->------------------------- */
-
-
-nav {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.65);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-nav a {
-  color: #222;
-  padding: 0 20px;
-  transition: all .3s;
-}
-
-nav a:hover {
-  color: #FF7B00;
-}
-
-
 
 /* -------------------<!-- About -->------------------------- */
 
+.box-center {
+  width: 80%;
+  margin: auto;
+}
 
 .about__container {
   display: flex;
+  /* a los lados X */
   justify-content: space-between;
+  /* LADO Y > INICIO ARRIBA */
   align-items: flex-start;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
 }
 
 .about__container .content {
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
   flex: 0 0 50%;
 }
 
@@ -301,23 +278,27 @@ nav a:hover {
 
 .about__container .container_image {
   position: relative;
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
   flex: 0 0 400px;
 }
 
 .about__container .container_image::before {
   content: '';
   position: absolute;
+
   top: 40px;
   left: -40px;
   width: 100%;
   height: 100%;
   background: #FF7B00;
+  /* Detras */
   z-index: -1;
 }
 
 .about__container .container_image img {
   width: 100%;
   height: 310px;
+  
   object-fit: cover;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   transition: all .5s;
@@ -326,10 +307,6 @@ nav a:hover {
 .about__container .container_image img:hover {
   transform: scale(1.1);
 }
-
-
-
-
 
 
 /* --------------------- responsive ----------------------- */

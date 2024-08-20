@@ -252,46 +252,63 @@ h5 {
 
 
 nav {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.65);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+    /* pierde su posicion  */
+    position: absolute;
+    top: 0;
+
+    /* para que aparezca */
+    z-index: 1;
+
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.65);
+
+    display: flex;
+    /* alinea por X */
+    justify-content: center;
+    /* alinea por Y */
+    align-items: center;
+    /* flex-flow: row wrap; */
+
 }
 
 nav a {
-  color: #222;
-  padding: 0 20px;
-  transition: all .3s;
+    color: #222;
+    /* top and bottom | left and right */
+    padding: 0 20px;
+    transition: all .3s;
 }
 
 nav a:hover {
-  color: #FF7B00;
+    color: #FF7B00;
 }
 
 /* -------------------<!-- Header -->------------------------- */
 
 .header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: 600px;
-  background: url(img/image1.jpg);
-  background-size: cover;
-  background-position: bottom;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    position: relative;
+
+    display: flex;
+    /* alinea por X */
+    justify-content: center;
+    /* alinea por Y */
+    align-items: center;
+    /* pone el contenido en columna */
+    /* flex-flow = flex-direction y flex-wrap. */
+    flex-flow: column nowrap;
+
+    width: 100%;
+    height: 600px;
+
+    background: url(img/image1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* efecto de triangulo en la base */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 
 .header * {
-  position: relative;
+    position: relative;
 }
 
 /* -------------------<!-- About -->------------------------- */

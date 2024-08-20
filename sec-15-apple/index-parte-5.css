@@ -16,9 +16,6 @@ body::-webkit-scrollbar-thumb{
      background: var(--text-color);
 }
 
-
-
-
 /** GENERALES  */
 *{
      margin: 0;
@@ -66,12 +63,6 @@ img{
      width: 100%;
 }
 
-section{
-     position: relative;
-     width: 100%;
-     height: 100vh;
-}
-
 
 
 .enlace-info{
@@ -87,58 +78,39 @@ section{
 
 
 
-/** ------------------------- SERVICIOS ------------------------- */
-.service{
-     background: url(img/image2.jpg);
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-}
 
-.service::before{
-     content: '';
-     position: absolute;
-     top: 0;
-     left: 0;
+/** ------------------------- IMAC  ------------------------- */
+section{
+     position: relative;
      width: 100%;
-     height: 100%;
-     
-     background: rgba(0, 0, 0, 0.95);
+     height: 100vh;
 }
 
 
-.service .grid{
-     width: 85%;
-     margin: 0 auto;
+.imac{
+     background: #FFF;
+     padding: 50px 0;
 }
 
-.service .contenedor{
-     flex-direction: column;
-     z-index: 1;
+.imac img{
+     width: 50%;
 }
 
-.service img{
-     width: 250px;
-     height: 250px;
-     margin: 25px 0;
+.imac h1{
+     font-size: 56px;
 }
 
-.service .text-container{
-     width: 60%;
-     text-align: center;
-}
-
-.service .text-container h2{
-     color: #FFF;
+.imac h2{
      font-size: 28px;
      font-weight: 400;
 }
 
+.imac h3{
+     letter-spacing: 0.5px;
+     font-size: 18px;
+}
 
-.text-container{
-     flex-direction: column; 
- }
- 
+
 /** ESTILOS GRID  */
 .grid{
      display: grid;
@@ -173,6 +145,28 @@ section{
      grid-column: span 12;
 }
 
+.text-container{
+     flex-direction: column; 
+ }
+ 
 
 
+/** ------------------------- FOOTER  ------------------------- */
+footer{
+     width: 100%;
+     height: 44px;
+     background: rgba(0, 0, 0, 0.8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
 
+footer img{
+     width: 16px;
+     opacity: .2;
+     transition: all .5s;
+}
+
+footer:hover img{
+     opacity: 1;
+}
