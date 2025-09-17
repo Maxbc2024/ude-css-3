@@ -1,5 +1,16 @@
 
 
+**************************** sec3
+
+
+noramalize
+https://necolas.github.io/normalize.css/
+
+
+***********************
+
+
+//
 flexbox
 https://flexboxfroggy.com/#es
 
@@ -16,6 +27,10 @@ https://www.mclibre.org/consultar/htmlcss/css/css-flexbox.html
 float
 clear:both
 https://es.learnlayout.com/float
+
+// font awesome
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 
 --------------------------------------------------------------------------

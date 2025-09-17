@@ -1,0 +1,8 @@
+
+
+
+selectores 
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+
