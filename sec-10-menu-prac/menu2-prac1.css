@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a, button{
+    text-decoration: none;
+    color: #EDF0F1;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+body{
+    background: #24252A;
+}
+
+/* -------------------------------------------------------------- */
+
+nav{
+    background-color: tomato;
+    /* x | y */
+    padding: 30px 5%;
+
+    display: flex;
+    /* alinea por x */
+    justify-content: space-between;
+    /* alinea por y */
+    align-items: center;
+
+}
+
+nav img{
+    width: 150px;
+}
+
+nav .enlaces a{
+    /* padre para que salga la rayita en el hijo */
+    position: relative;
+    /* x | y */
+    padding: 0 20px;
+
+    transition: all .5s;
+}
+
+nav .enlaces a::before{
+    /* la rayita abajo  */
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FAAF38;
+    position: absolute;
+    bottom: -5px;
+    transition: all .5s;
+}
+
+nav .enlaces a:hover::before{
+    width: 40%;
+}
+
+.enlaces a:hover{
+    color: #FAAF38;
+}
+
+nav button{
+    background: #FAAF38;
+    border: none;
+    border-radius: 50px;
+    /* x | y */
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    transition: all .5s;
+   
+}
+
+nav button:hover{
+    background: #C98520;
+}

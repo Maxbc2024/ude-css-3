@@ -7,21 +7,27 @@
 
 
 /* ********************* MENU LATERAL */
+
 nav{
     position: fixed;
+
+    background: #111;
+
     top: 0;
     left: 0;
     width: 60px;
     height: 100vh;
-    background: #111;
 }
 
 .contenedor-imagen{
     width: 100%;
     height: 50px;
+
+    /* CENTRA */
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-bottom: 20px;
 }
 
@@ -33,7 +39,9 @@ nav{
     height: 60%;
     display: flex;
     flex-direction: column;
+
     justify-content: space-around;
+    /* ALINEA X */
     align-items: center;
 }
 
@@ -43,12 +51,13 @@ a{
     color: rgba(255, 255, 255, 0.4);
     width: 100%;
     height: 50px;
+    /* CENTRA */
     display: flex;
     justify-content: center;
     align-items: center;
+
     transition: all .5s;
 }
-
 
 a:hover{
     background: rgba(255, 255, 255, 0.1);
@@ -64,21 +73,21 @@ a:hover{
     background: #dc3545;
     color: #FFF;
 }
-
-
-
-
 /* ********************* MENU SUPERIOR */
+
 header{
     width: 100%;
     height: 50px;
     padding: 0 80px;
+
     display: flex;
+    /* ALINEA Y */
     justify-content: space-between;
+    /* ALINEA X */
     align-items: center;
+
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border-bottom: 1px solid #f5f5f5;
-
 }
 
 header p{
@@ -95,17 +104,22 @@ header .info-user{
 
 header .info-user span{
     position: relative;
+
+    font-size: 1.2em;
+
     width: 35px;
     height: 35px;
+    margin: 0 15px;
+    /* CENTRA */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 15px;
-    font-size: 1.2em;
+
     color: #4B4B4B;
     cursor: pointer;
 }
 
+/* Poner el punto rojo */
 header .info-user span::after{
     content: '';
     position: absolute;
@@ -118,6 +132,7 @@ header .info-user span::after{
 }
 
 header .info-user .container-imagen{
+    /* para el punto verde */
     position: relative;
     cursor: pointer;
 }
@@ -130,6 +145,7 @@ header .info-user .container-imagen img{
     border-radius: 50%;
 }
 
+/* poner punto verde */
 header .info-user .container-imagen::after{
     content: '';
     position: absolute;
@@ -141,11 +157,11 @@ header .info-user .container-imagen::after{
     border-radius: 50%;
 }
 
-
-
-
 /* ********************* SOCIALES */
+
 .sociales{
+    /* background-color: #DC3545; */
+
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -154,12 +170,15 @@ header .info-user .container-imagen::after{
 
 .sociales .icon{
     margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     position: relative;
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    /* centra */
+    justify-content: center;
+    align-items: center;
 }
 
 .sociales .icon span{
@@ -167,18 +186,22 @@ header .info-user .container-imagen::after{
     height: 50px;
     background: #ccc;
     border-radius: 50%;
+    font-size: 20px;
+    /* centra el icono adentro */
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    
 }
 
 .sociales .icon .tooltip{
     position: absolute;
+    
     top: 0;
     background: #ccc;
     padding: 10px 18px;
     border-radius: 25px;
     font-weight: 600;
+
     opacity: 0;
     transition: all .5s;
 }
@@ -207,6 +230,7 @@ header .info-user .container-imagen::after{
     background: #3B5999;
     color: #FFF;
 }
+
 
 .sociales .twitter:hover span,
 .sociales .twitter:hover .tooltip,
