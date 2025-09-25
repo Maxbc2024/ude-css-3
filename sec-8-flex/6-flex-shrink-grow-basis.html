@@ -14,11 +14,15 @@
                align-items: center;
           }
           
-          /* grow = crece segun numero proporcio */
+          /* APLICA TAMAÑOS RELATIVOS ALOS HIJOS */
+          
+          /* GROW = crece segun numero proporcional (desl espacio que sobra) */
           /* default =0 */
-          /* shrink = disminuye segun numero proporcio */
+
+          /* SHRINK = disminuye segun numero proporcional */
           /* default =1 */
-          /* flex-basis = tamaño base minimo */
+
+          /* FLEX-BASIS = tamaño base minimo */
           /* default auto */
           
           .items:nth-child(1){
@@ -30,18 +34,17 @@
 
           .items:nth-child(2){
                background: #21f032;
+
                flex-grow: 5;
                /* flex-shrink: 10; */
           }
 
           .items:nth-child(3){
                background: #f08521;
+
                flex-grow: 2;
                /* flex-shrink:5; */
                /* flex-basis: 200px; */
-
-               /* ATAJO */
-               /* flex: 10 20 auto; */
           }
 
           .items:nth-child(4){
@@ -51,6 +54,9 @@
                flex-shrink: 0;
           }
 
+          /* ATAJO */
+          /* flex:  GROW| SHRINK | FLEX-BASIS */
+          /* flex: 10 20 auto; */
 
      </style>
 
