@@ -1,0 +1,22 @@
+
+.auto-fit div{
+    background-color: violet;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Autofill */
+.auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+
+
+/* AutoFit */
+.auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+}
+

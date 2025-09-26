@@ -1,0 +1,27 @@
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+
+    /* Alineacion horizontal */
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+    justify-items: auto;
+    justify-items: stretch;
+
+
+    /* Alineacion vertical */
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: stretch;
+}
+
+.grid .item{
+    background: violet; 
+    justify-self: center;
+    align-self: center;
+}

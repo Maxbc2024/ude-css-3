@@ -6,36 +6,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <link rel="stylesheet" href="estilos.css">
-
-     <style>
-          .auto-fit div{
-               background-color: violet;
-          }
-     
-          .grid{
-               display: grid;
-               grid-gap: 20px;
-          }
-
-          /* Autofill */
-          .auto-fill{
-              grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-          }
-
-     
-
-          /* AutoFit */
-          .auto-fit{
-              grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
-          }
-
-
-
-     </style>
-
-
+     <link rel="stylesheet" href="10-autofitfill.css">
 </head>
 <body>
+     <h3>auto-fill</h3>
      <div class="grid auto-fill">
 		<div>1</div>
 		<div>2</div>
@@ -43,7 +17,7 @@
 		<div>4</div>
           <div>5</div>
 	</div>
-
+      <h3>auto-fit</h3>
      <div class="grid auto-fit">
 		<div>1</div>
 		<div>2</div>

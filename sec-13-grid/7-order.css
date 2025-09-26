@@ -1,0 +1,19 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid div{
+    order: 0;
+}
+
+.grid .item{
+    background: violet;
+    order: -1;
+}
+
+.grid .item2{
+    background: lightseagreen;
+    order: -1;
+}

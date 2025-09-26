@@ -1,0 +1,31 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background: crimson;
+    margin: 50px auto;
+
+    /* MEDOTO1 FLEXBOX */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+    /* METODO 2 GRID */
+    /* display: grid;
+    justify-content: center;
+    align-content: center; */
+
+
+    /* METODO 3 GRID */
+    display: grid;
+    place-items: center;
+
+
+
+}
+
+.container div{
+    width: 100px;
+    height: 100px;
+    background: #222;
+}
